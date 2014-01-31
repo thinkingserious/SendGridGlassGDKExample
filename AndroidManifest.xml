@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="2"
+        android:versionName="1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.thinkingserious.sendgrid.glass.gdk.example">
+    
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <activity
+            android:name="com.thinkingserious.sendgrid.glass.gdk.example.MainActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/world_icon">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+
+    </application>
+
+</manifest>
+
+    

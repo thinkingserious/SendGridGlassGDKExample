@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendGrid Glass GDK Example</string>
+    <string name="hello_world"></string>
+    <string name="send_email">send an email</string>
+    
+    <!-- Menu item strings. -->
+    <string name="read_aloud">Read aloud</string>
+    <string name="send">Send the Email</string>
+    <string name="to">Edit To</string>
+    <string name="subject">Edit Subject</string>
+    <string name="text">Edit Body</string>
+
+</resources>
