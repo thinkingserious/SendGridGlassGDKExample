@@ -4,7 +4,7 @@ There is a companion blog post, yet to published, that walks through the entire 
 
 ## Usage
 
-This app allows you to send email via SendGrid through Glass by adding an additional menu item to the Home card. 
+This app allows you to send email via [SendGrid](http://www.sendgrid.com) (you will need at least a free account) through Glass by adding an additional menu item to the Home card. 
 
 Start the app by saying "OK Glass, send an email." from the Home menu or tap on the home menu and choose "send an email".
 
