@@ -2,11 +2,13 @@ This code is not production ready. It is meant to help you integrate quickly wit
 
 There is a companion blog post, yet to published, that walks through the entire process to build this app from scratch. When it's live, I'll post the link here.
 
+View a demo of this Glassware in action on [YouTube](http://youtu.be/84ZP6Pi68nE).
+
 ## Usage
 
-This app allows you to send email via [SendGrid](http://www.sendgrid.com) (you will need at least a free account) through Glass by adding an additional menu item to the Home card. 
+This Glassware allows you to send email via [SendGrid](http://www.sendgrid.com) (you will need at least a free account) through Glass by adding an additional menu item to the Home card. 
 
-Start the app by saying "OK Glass, send an email." from the Home menu or tap on the home menu and choose "send an email".
+Start the Glassware by saying "OK Glass, send an email." from the Home menu or tap on the home menu and choose "send an email".
 
 Next, you will be prompted to speak whom you would like the email to go to. Then you will provide a subject and body.
 
