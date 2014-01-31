@@ -17,7 +17,7 @@ public class SendEmailWithSendGrid extends AsyncTask<Hashtable<String,String>, V
             sendgrid.setFrom(creds.getFromAddress());
             sendgrid.addTo(h.get("to"));
             sendgrid.setSubject(h.get("subject"));
-            sendgrid.setText(h.get("text"));
+            sendgrid.setText(h.get("text") + "\n\n#throughglass");
             String response = sendgrid.send();
             return response;
     }
