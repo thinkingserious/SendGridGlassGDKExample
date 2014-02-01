@@ -102,8 +102,8 @@ public class MainActivity extends Activity {
                 return true;
             }
             if(this.text == null){
-                Intent intent_subject = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                startActivityForResult(intent_subject, SET_TEXT);
+                Intent intent_text = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                startActivityForResult(intent_text, SET_TEXT);
                 return true;
             }
             // When all fields are defined, lets provide the option to preview, edit and send
