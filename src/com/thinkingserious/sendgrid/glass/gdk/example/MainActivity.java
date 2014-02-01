@@ -133,7 +133,7 @@ public class MainActivity extends Activity {
     	if ((requestCode == SET_TO) && (resultCode == RESULT_OK)) {
             String name = results.get(0).toString();
             String recipient = email.getEmail(name);
-    		this.to = recipient;
+            this.to = recipient;
             if(!initialized){
                 setCard("What is the subject? Tap to continue.", footnote);
                 initialized = true;
