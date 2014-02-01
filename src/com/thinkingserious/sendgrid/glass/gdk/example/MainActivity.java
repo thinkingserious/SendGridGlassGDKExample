@@ -23,13 +23,13 @@ import com.google.android.glass.app.Card;
 // This class is invoked when the app starts, specifically the function onCreate
 public class MainActivity extends Activity {
 	
-	private static final int SET_TO = 0;
-	private static final int SET_SUBJECT = 1;
-	private static final int SET_TEXT = 2;
+    private static final int SET_TO = 0;
+    private static final int SET_SUBJECT = 1;
+    private static final int SET_TEXT = 2;
 
     private String to = null;
-	private String subject = null;
-	private String text = null;
+    private String subject = null;
+    private String text = null;
     private String footnote = "SendGrid.com";
 
     private Boolean initialized = false;
@@ -38,9 +38,9 @@ public class MainActivity extends Activity {
     // When the GDK supports contacts, you can replace this class
     private AddressBook email = new AddressBook();
 
-	@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 
         String body = "Who will receive this email?\n";
         HashMap map = email.getEmails();
