@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-            android:id="@+id/send"
-            android:title="@string/send"
-            android:icon="@drawable/world_icon" />
+        android:id="@+id/send"
+        android:title="@string/send"
+        android:icon="@drawable/world_icon" />
     <item
         android:id="@+id/to"
         android:title="@string/to"
