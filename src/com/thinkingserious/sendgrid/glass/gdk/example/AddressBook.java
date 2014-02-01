@@ -3,11 +3,8 @@ package com.thinkingserious.sendgrid.glass.gdk.example;
 import java.util.HashMap;
 
 /*
-
 Since the voice recognition in Glass makes it hard to speak email addresses, we instead use nicknames
-
 Once Contacts are implemented in the GDK, we can replace this class
-
 */
 public class AddressBook {
     private HashMap<String, String> emails;
