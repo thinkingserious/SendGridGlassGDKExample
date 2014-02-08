@@ -93,16 +93,19 @@ public class MainActivity extends Activity {
             // On the first tap, we want to get the to email address
             if (!initialized) {
                 Intent intent_to = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the recipient's name");
                 startActivityForResult(intent_to, SET_TO);
                 return true;
             }
             if(this.subject == null){
                 Intent intent_subject = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the subject of your email");
                 startActivityForResult(intent_subject, SET_SUBJECT);
                 return true;
             }
             if(this.text == null){
                 Intent intent_text = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the body of your email");
                 startActivityForResult(intent_text, SET_TEXT);
                 return true;
             }
