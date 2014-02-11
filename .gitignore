@@ -2,7 +2,6 @@
 .metadata
 .gradle
 .idea
-libs/
 bin/
 tmp/
 *.tmp
