@@ -27,6 +27,10 @@ public class MainActivity extends Activity {
     private static final int SET_SUBJECT = 1;
     private static final int SET_TEXT = 2;
 
+    private static final String VOICE_TO = "Say the recipient's name";
+    private static final String VOICE_SUBJECT = "Say the subject of your email";
+    private static final String VOICE_TEXT = "Say the body of your email";
+
     private String to = null;
     private String subject = null;
     private String text = null;
@@ -93,19 +97,19 @@ public class MainActivity extends Activity {
             // On the first tap, we want to get the to email address
             if (!initialized) {
                 Intent intent_to = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the recipient's name");
+                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TO);
                 startActivityForResult(intent_to, SET_TO);
                 return true;
             }
             if(this.subject == null){
                 Intent intent_subject = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent_subject.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the subject of your email");
+                intent_subject.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TO);
                 startActivityForResult(intent_subject, SET_SUBJECT);
                 return true;
             }
             if(this.text == null){
                 Intent intent_text = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent_text.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say the body of your email");
+                intent_text.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TEXT);
                 startActivityForResult(intent_text, SET_TEXT);
                 return true;
             }
@@ -203,18 +207,21 @@ public class MainActivity extends Activity {
             // Capture who the email will be sent to
             case R.id.to:
                 Intent intent_to = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_to.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TO);
                 startActivityForResult(intent_to, SET_TO);
                 return true;
 
             // Capture the subject of the email
             case R.id.subject:
                 Intent intent_subject = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_subject.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_SUBJECT);
                 startActivityForResult(intent_subject, SET_SUBJECT);
                 return true;
 
             // Capture the body of the email
             case R.id.text:
                 Intent intent_text = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent_text.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TEXT);
                 startActivityForResult(intent_text, SET_TEXT);
                 return true;
 
