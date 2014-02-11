@@ -103,7 +103,7 @@ public class MainActivity extends Activity {
             }
             if(this.subject == null){
                 Intent intent_subject = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent_subject.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_TO);
+                intent_subject.putExtra(RecognizerIntent.EXTRA_PROMPT, VOICE_SUBJECT);
                 startActivityForResult(intent_subject, SET_SUBJECT);
                 return true;
             }
