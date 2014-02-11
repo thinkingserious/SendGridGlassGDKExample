@@ -12,8 +12,8 @@ public class AddressBook {
     // You may want to use some external source to populate this data
     public AddressBook(){
         emails = new HashMap<String, String>();
-        emails.put("Elmer", "elmer.thomas@sendgrid.com");
-        emails.put("OmniFocus", "send-to-omnifocus@omnigroup.com");
+        emails.put("Elmer".toUpperCase(), "elmer.thomas@sendgrid.com");
+        emails.put("OmniFocus".toUpperCase(), "send-to-omnifocus@omnigroup.com");
     }
 
     public HashMap<String, String> getEmails() {
@@ -21,7 +21,7 @@ public class AddressBook {
     }
 
     public String getEmail(String name){
-        String email = emails.get(name);
+        String email = emails.get(name.toUpperCase());
         if( email != null ) {
             return email;
         } else {
