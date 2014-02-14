@@ -1,6 +1,6 @@
 This code is not production ready. It is meant to help you integrate quickly with SendGrid when developing for Google Glass natively. You will need to incorporate error handling and testing. 
 
-There is a companion blog post, yet to published, that walks through the entire process to build this app from scratch. When it's live, I'll post the link here.
+There is a [companion blog post](http://sendgrid.com/blog/google-glass-tutorial-sends-email-visually/) at SendGrid's blog.
 
 View a demo of this Glassware in action on [YouTube](http://youtu.be/84ZP6Pi68nE).
 
